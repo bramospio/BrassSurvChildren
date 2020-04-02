@@ -13,26 +13,19 @@
 solutionFilter<-function(data, locale="none",time="none",gender="none"){
   if ((locale="none")&&(time=="none")&&(gender=="none")){
     f<-solution(data)
-  }
-  if((locale=="none")&&(time=="none")){
+  } else if((locale=="none")&&(time=="none")){
     f<-filter(solution(data),sex=gender)
-  }
-  if((locale=="none")&&(gender=="none")){
+  } else if((locale=="none")&&(gender=="none")){
     f<-filter(solution(data),year=time)
-  }
-  if((time=="none")&&(gender=="none")){
+  } else if((time=="none")&&(gender=="none")){
     f<-filter(solution(data),location=locale)
-  }
-  if(locale=="none"){
+  } else if(locale=="none"){
     f<-filter(solution(data),year=time,sex=gender)
-  }
-  if(time=="none"){
+  } else if(time=="none"){
     f<-filter(solution(data),location=locale,sex=gender)
-  }
-  if(gender=="none"){
+  } else if(gender=="none"){
     f<-filter(solution(data),location=locale,year=time)
-  }
-  else{
+  } else{
     f<-filter(solution(data),location=locale,year=time)
   }
   return(f)
