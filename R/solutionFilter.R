@@ -10,7 +10,7 @@
 #'@export
 
 
-solutionFilter<-function(data, locale="none",time="none",gender="none"){
+solutionFilter<-function(data, locale=="none",time=="none",gender=="none"){
   if ((locale=="none")&&(time=="none")&&(gender=="none")){
     f<-solution(data)
   } else if((locale=="none")&&(time=="none")){
