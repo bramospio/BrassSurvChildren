@@ -1,5 +1,4 @@
 
 
 export(solution)
-export(solutionFilter)
 export(surv.children)
