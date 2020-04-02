@@ -2,6 +2,6 @@
 
 export(solution)
 export(solutionFilter)
-export(sur.children)
+export(surv.children)
 import(rapportools)
 import(tidyverse)
