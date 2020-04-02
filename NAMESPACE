@@ -3,5 +3,3 @@
 export(solution)
 export(solutionFilter)
 export(surv.children)
-import(rapportools)
-import(tidyverse)
